@@ -4,11 +4,140 @@
   <meta charset="utf-8" />
   <title>Washer Life – Where socks disappear forever.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Washer Life – cinematic meme project about the life of a washing machine. Daily wash messages, videos and questionable detergent." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <h1>Washer Life</h1>
-  <p>Local test version. Replace hero image and deploy to Vercel.</p>
-  <img src="washerlife-hero.jpg" alt="Hero" style="max-width:300px;">
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">WASHER LIFE</div>
+      <nav class="nav">
+        <a href="#today">Today’s Wash</a>
+        <a href="#powder">Powder</a>
+        <a href="#story">Story</a>
+      </nav>
+      <a href="#buy" class="btn btn-primary btn-small">BUY</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>WASHER LIFE</h1>
+        <p class="subtitle">Where cycles never end.<br>Where socks disappear forever.</p>
+
+        <div class="hero-image">
+          <img src="washerlife-hero.jpg" alt="Washer Life washing machine in the mist">
+        </div>
+
+        <div class="hero-message">
+          <p class="label">Today’s wash message:</p>
+          <p class="quote">“Accept the spin you chose.”</p>
+          <p class="status"><span class="dot"></span> updated daily</p>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#buy" class="btn btn-primary btn-large">BUY DETERGENT</a>
+          <p class="hero-note">Two questionable scents. Infinite despair.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TODAY'S WASH -->
+    <section class="section section-paper" id="today">
+      <div class="container today-grid">
+        <div class="paper paper-note">
+          <h2>Today’s Wash</h2>
+          <p>Recorded somewhere near the laundromat.</p>
+          <span class="paper-date">April 2026</span>
+        </div>
+
+        <div class="paper paper-video">
+          <!-- TODO: replace with real video embed (YouTube / Vimeo) -->
+          <div class="video-placeholder">
+            <span>Video will go here</span>
+          </div>
+          <p class="video-caption">Available to everyone. Every day.</p>
+          <div class="video-actions">
+            <button class="btn btn-ghost">Share</button>
+            <button class="btn btn-ghost">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PICK YOUR POWDER -->
+    <section class="section" id="powder">
+      <div class="container">
+        <h2>Pick your powder.</h2>
+        <p class="subtitle">Same powder. Only bad choices.</p>
+
+        <div class="powder-grid">
+          <div class="powder-card">
+            <div class="powder-bag powder-bag-white"></div>
+            <h3>WHITE WASH</h3>
+            <p class="price">€49.99</p>
+            <a href="#buy" class="btn btn-outline">BUY</a>
+          </div>
+
+          <div class="powder-card">
+            <div class="powder-bag powder-bag-color"></div>
+            <h3>COLOR CHAOS</h3>
+            <p class="price">€49.99</p>
+            <a href="#buy" class="btn btn-outline">BUY</a>
+          </div>
+        </div>
+
+        <p class="subtitle">Same powder. Different trauma.</p>
+      </div>
+    </section>
+
+    <!-- STORY SECTION -->
+    <section class="section section-paper" id="story">
+      <div class="container story-grid">
+        <div class="paper paper-story">
+          <p>
+            There used to be a laundromat near the old tracks.<br>
+            People said strange things happened there.<br>
+            Some still do. We just decided to film it.
+          </p>
+        </div>
+        <div class="paper paper-photo">
+          <div class="photo-placeholder">
+            <span>Moody laundromat photo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="section section-final" id="buy">
+      <div class="container final-inner">
+        <h2>WHY?</h2>
+        <p>We don’t know. But it spins. And so do you.</p>
+        <a href="mailto:orders@washerlife.com?subject=Washer%20Life%20Order"
+           class="btn btn-primary btn-large">
+          BUY BEFORE IT EXPLODES
+        </a>
+        <p class="final-note">
+          Washer Life is an art project. Detergent may or may not exist.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© 2026 Washer Life</span>
+      <div class="footer-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="mailto:hello@washerlife.com">Contact</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
